@@ -9,7 +9,7 @@ Ready for production & Easy to maintain by other developers
 * Run `mvn verify`
 
 ----
-server is running on AWS EC2 instance
+server is running on AWS EC2 instance, you can localy pull the application image from docker hub : docker pull abdel4dev/fizzbuzz:v1
 ----
 
 * Rest endpoints
