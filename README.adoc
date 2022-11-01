@@ -1,0 +1,47 @@
+= FizzBuzz Server
+
+This repository uses Java 8 / SpringBoot 2.3.3
+
+== The code
+
+Ready for production & Easy to maintain by other developers
+
+* Run `mvn verify`
+
+----
+server is running on AWS EC2 instance
+----
+
+* Rest endpoints
+
+** *GET /fizzbuzz :*  Accepts five parameters:
+three integers int1, int2 and limit, and two strings str1 and str2 and
+Returns a list of strings with numbers from 1 to limit, where: all multiples of int1 are replaced by str1, all multiples of int2 are replaced by str2,
+all multiples of int1 and int2 are replaced by str1str2.
+
+** *GET /stats :*  Accept no parameter and
+returns the parameters corresponding to the most used request, as well as the number of hits for this request
+
+Example :
+(try to change some parameters)
+----
+http://3.130.19.174:8080/fizzbuzz?int1=3&int2=5&limit=100&str1=fizz&str2=buzz
+----
+
+then launch :
+
+----
+http://3.130.19.174:8080/stats
+----
+
+== The clean code & unit tests
+
+Names of variables and methods are significant, so no description (doc) is needed to understand what is expected from code.
+About unit tests, most of the code is covered
+
+== The code coverage
+
+97% : check the link
+----
+http://3.130.19.174/fizzbuzz-code-coverage/jacoco-ut/
+----
